@@ -11,7 +11,7 @@ interface ContactItemProps {
 export default function ContactItem(props: ContactItemProps) {
   return (
     <Item>
-      <a href={props.link} target="_blank">
+      <a href={props.link} target="_blank" title={props.label}>
         {props.icon}
       </a>
       <span>{props.label}</span>

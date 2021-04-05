@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Item = styled.div`
-  margin: 0 1.5rem;
+  margin: 0 1rem;
 
   display: flex;
   flex-direction: column;
@@ -21,5 +21,17 @@ export const Item = styled.div`
   > span {
     font-size: 1.1rem;
     font-weight: 300;
+  }
+
+  @media (max-width: 380px) {
+    margin: 0.5rem 0;
+
+    > a svg {
+      font-size: 2.5rem;
+    }
+
+    > span {
+      display: none;
+    }
   }
 `;

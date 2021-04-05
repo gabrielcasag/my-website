@@ -14,6 +14,16 @@ export default function ContactWays() {
   return (
     <Container>
       <ContactItem
+        icon={<FiGithub />}
+        label="GitHub"
+        link="https://github.com/gabrielcasag"
+      />
+      <ContactItem
+        icon={<FiMail />}
+        label="Gmail"
+        link="mailto:gaspericasag@gmail.com"
+      />
+      <ContactItem
         icon={<FiInstagram />}
         label="Instagram"
         link="https://www.instagram.com/gabrielcasag_/"
@@ -22,21 +32,6 @@ export default function ContactWays() {
         icon={<FiLinkedin />}
         label="LinkedIn"
         link="https://www.linkedin.com/in/gabrielcasag/"
-      />
-      <ContactItem
-        icon={<FiMail />}
-        label="Gmail"
-        link="mailto:gaspericasag@gmail.com"
-      />
-      <ContactItem
-        icon={<FiGithub />}
-        label="GitHub"
-        link="https://github.com/gabrielcasag"
-      />
-      <ContactItem
-        icon={<FiGitlab />}
-        label="GitLab"
-        link="https://gitlab.com/gabrielcasag"
       />
     </Container>
   );
