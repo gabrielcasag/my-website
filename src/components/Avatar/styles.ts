@@ -13,7 +13,7 @@ export const Container = styled.div`
     margin: 0 auto;
 
     border-radius: 50%;
-    box-shadow: 0 0 60px 10px var(--light-shadow);
+    box-shadow: 0 0 60px 10px ${(props) => props.theme.colors.shadow};
 
     transition: height 0.5s;
   }
