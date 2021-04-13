@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-export const Container = styled.button`
-  border-radius: 30px;
+export const Container = styled.div`
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
-  display: flex;
   font-size: 0.5rem;
-  justify-content: space-between;
-  padding: 0.5rem;
-  outline: none;
-  border: none;
-  background: transparent;
 
   svg {
     height: auto;
-    width: 2.5rem;
+    width: 1.8rem;
     transition: all 0.3s linear;
     color: ${(props) => props.theme.colors.text};
 
@@ -32,5 +28,9 @@ export const Container = styled.button`
           ? "translateY(-100px) "
           : "translateX(-10px) translateY(0)"};
     }
+  }
+
+  @media (min-width: 720px) {
+    max-width: 650px;
   }
 `;

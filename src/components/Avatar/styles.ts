@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 260px;
+  height: 230px;
   margin: 2rem 0;
 
   > img {
-    height: 230px;
+    height: 200px;
     width: auto;
 
     display: block;
@@ -19,6 +19,7 @@ export const Container = styled.div`
   }
 
   > img:hover {
-    height: 250px;
+    height: 225px;
+    cursor: pointer;
   }
 `;
