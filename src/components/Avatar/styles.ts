@@ -20,6 +20,5 @@ export const Container = styled.div`
 
   > img:hover {
     height: 225px;
-    cursor: pointer;
   }
 `;

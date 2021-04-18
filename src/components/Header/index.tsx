@@ -10,9 +10,9 @@ export default function Header() {
   };
 
   return (
-    <Container onClick={handleToggleTheme}>
-      <FiSun />
-      <FiMoon />
+    <Container>
+      <FiSun onClick={handleToggleTheme} />
+      <FiMoon onClick={handleToggleTheme} />
     </Container>
   );
 }

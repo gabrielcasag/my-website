@@ -11,7 +11,7 @@ export const Item = styled.div`
     font-size: 1.1rem;
     font-weight: 300;
   }
-  
+
   > a svg {
     font-size: 2rem;
 
@@ -23,15 +23,15 @@ export const Item = styled.div`
     cursor: pointer;
   }
 
-  ${(props) => props.theme.title === "dark" 
-    && css`
+  ${(props) =>
+    props.theme.title === "dark" &&
+    css`
       > a svg:hover {
-        filter: brightness(500%);
+        filter: opacity(60%);
         cursor: pointer;
         text-shadow: 10px solid white;
       }
-  `}
-  
+    `}
 
   @media (max-width: 380px) {
     margin: 0.5rem 0;
