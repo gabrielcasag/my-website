@@ -1,14 +1,14 @@
+import ThemeSwitcher from "../../components/ThemeSwitcher";
 import Avatar from "../../components/Avatar";
 import AboutMe from "../../components/AboutMe";
 import ContactWays from "../../components/ContactWays";
-import Header from "../../components/Header";
 
 import { Container } from "../../styles/pages/main";
 
 export default function Main() {
   return (
     <Container>
-      <Header />
+      <ThemeSwitcher />
       <Avatar />
       <AboutMe />
       <ContactWays />

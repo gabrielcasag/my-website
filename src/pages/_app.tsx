@@ -1,20 +1,13 @@
-import { useState } from "react";
-import { ThemeProvider } from "styled-components";
+import { CustomThemeProvider, useTheme } from "../contexts/ThemeContext";
 
-import light from "../styles/themes/light";
-import dark from "../styles/themes/dark";
+import GlobalStyles from "../styles/global";
 
 function MyApp({ Component, pageProps }) {
-  const [theme, setTheme] = useState(light);
-
-  function toggleTheme() {
-    setTheme(theme.title === "light" ? dark : light);
-  }
-
   return (
-    <ThemeProvider theme={light}>
-      <Component {...pageProps} toggleTheme={toggleTheme} />
-    </ThemeProvider>
+    <CustomThemeProvider>
+      <GlobalStyles />
+      <Component {...pageProps} />
+    </CustomThemeProvider>
   );
 }
 
