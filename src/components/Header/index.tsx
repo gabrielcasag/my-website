@@ -1,18 +1,22 @@
-import { useTheme } from "../../contexts/ThemeContext";
-import { FiSun, FiMoon } from "react-icons/fi";
-import { Container } from "./styles";
+import React from "react";
 
-export default function Header() {
-  const { toggleTheme, theme } = useTheme();
+import * as S from "./styles";
 
-  const handleToggleTheme = () => {
-    toggleTheme();
-  };
-
+const Header = () => {
   return (
-    <Container>
-      <FiSun onClick={handleToggleTheme} />
-      <FiMoon onClick={handleToggleTheme} />
-    </Container>
+    <S.HeaderContainer>
+      <div>G</div>
+
+      <nav>
+        <ul>
+          <li>Menu</li>
+          <li>Menu</li>
+          <li>Menu</li>
+          <li>Menu</li>
+        </ul>
+      </nav>
+    </S.HeaderContainer>
   );
-}
+};
+
+export default Header;

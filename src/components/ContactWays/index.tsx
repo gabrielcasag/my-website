@@ -8,11 +8,11 @@ import {
   FiGitlab,
 } from "react-icons/fi";
 
-import { Container } from "./styles";
+import * as S from "./styles";
 
 export default function ContactWays() {
   return (
-    <Container>
+    <S.Container>
       <ContactItem
         icon={<FiGithub />}
         label="GitHub"
@@ -33,6 +33,6 @@ export default function ContactWays() {
         label="LinkedIn"
         link="https://www.linkedin.com/in/gabrielcasag/"
       />
-    </Container>
+    </S.Container>
   );
 }

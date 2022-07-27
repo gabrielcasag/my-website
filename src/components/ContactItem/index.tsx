@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import { Item } from "./styles";
+import * as S from "./styles";
 
 interface ContactItemProps {
   icon: ReactNode;
@@ -10,11 +10,11 @@ interface ContactItemProps {
 
 export default function ContactItem(props: ContactItemProps) {
   return (
-    <Item>
+    <S.Item>
       <a href={props.link} target="_blank" title={props.label}>
         {props.icon}
       </a>
       <span>{props.label}</span>
-    </Item>
+    </S.Item>
   );
 }

@@ -1,10 +1,10 @@
-import { Container } from "./styles";
+import * as S from "./styles";
 
 export default function AboutMe() {
   return (
-    <Container>
+    <S.Container>
       <p>Olá,</p>
       <span>eu sou o Gabriel!</span>
-    </Container>
+    </S.Container>
   );
 }

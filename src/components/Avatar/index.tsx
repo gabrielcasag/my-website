@@ -1,9 +1,9 @@
-import { Container } from "./styles";
+import * as S from "./styles";
 
 export default function Avatar() {
   return (
-    <Container>
+    <S.Container>
       <img src="/me.jpg" alt="This is a pic from me!" title="Me.jpg" />
-    </Container>
+    </S.Container>
   );
 }
